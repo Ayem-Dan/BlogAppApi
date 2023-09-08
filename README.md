@@ -22,8 +22,8 @@ I know you mentioned you're into tech, so here's what we're using:
 3. **Database Setup**: Set up your database connection string in `appsettings.json`.
 4. **Migrations**: Run migrations to create the database schema.
 5. **API Keys**: If you have any API keys or secrets, add them to your `appsettings.json`.
-6. **Run the Project**: Use `dotnet run` to start the API.
-7. **Swagger Documentation**: Open your browser and go to `http://localhost:5000/swagger` to explore the API documentation.
+6. **Run the Project**: Use `dotnet watch run` to start the API.
+7. **Swagger Documentation**: Open your browser and go to `{url}/swagger` to explore the API documentation.
 
 ## Endpoints
 
