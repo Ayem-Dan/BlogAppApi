@@ -14,7 +14,7 @@ public class User
     // public Photo ProfilePic {get; set;}
     public string FirstName { get; set; }
     public string LastName { get; set; }
-    public bool IsAuthor { get; set; }
+    public bool IsAuthor { get; set; } = true;
     public DateTime CreatedAt { get; set; }
 
     [Required]
@@ -29,10 +29,10 @@ public class User
     public User(int id, string emailAddress, string username, string firstname, string lastName, string? password)
     {
         Id = id;
-        EmailAddress = emailAddress;
         Username = username;
         FirstName = firstname;
         LastName = lastName;
+        EmailAddress = emailAddress;
 
         if (!string.IsNullOrEmpty(password))
             PasswordHash = HashPlainText(password);

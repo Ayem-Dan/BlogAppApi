@@ -1,10 +1,13 @@
-﻿using BlogApp_webapi.Models;
+﻿global using Microsoft.AspNetCore.Mvc;
+using BlogApp_webapi.Models;
 using BlogApp_webapi.Services.Dtos.Post;
 using BlogApp_webapi.Services.PostService;
-using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BlogApp_webapi.Controllers;
 
+[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 [ApiController]
 [Route("[Controller]")]
 public class PostController : ControllerBase
