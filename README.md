@@ -8,8 +8,6 @@ This API is designed to power my awesome blog. It allows users to read, create, 
 
 ## Tech Stack
 
-I know you mentioned you're into tech, so here's what we're using:
-
 - **.NET 7**: The heart of the project, providing us with the latest features and performance improvements.
 - **C#**: The language that makes it all happen.
 - **Entity Framework Core**: For managing our database and data models.
